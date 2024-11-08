@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobCandidateHubApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9547b1b79b509f2035318ae22f8f271a8f993844")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+339112e6adde82657ec2f6604c11acf9711e8c31")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobCandidateHubApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobCandidateHubApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
