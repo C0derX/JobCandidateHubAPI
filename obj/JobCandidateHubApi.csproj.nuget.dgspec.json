@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\JobCandidateHubApi\\JobCandidateHubApi.csproj": {}
+    "C:\\Users\\User\\Desktop\\New folder (2)\\JobCandidateHubApi\\JobCandidateHubApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\JobCandidateHubApi\\JobCandidateHubApi.csproj": {
+    "C:\\Users\\User\\Desktop\\New folder (2)\\JobCandidateHubApi\\JobCandidateHubApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\JobCandidateHubApi\\JobCandidateHubApi.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\New folder (2)\\JobCandidateHubApi\\JobCandidateHubApi.csproj",
         "projectName": "JobCandidateHubApi",
-        "projectPath": "C:\\Users\\User\\Desktop\\JobCandidateHubApi\\JobCandidateHubApi.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\New folder (2)\\JobCandidateHubApi\\JobCandidateHubApi.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\JobCandidateHubApi\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\New folder (2)\\JobCandidateHubApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,24 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.10, )"
             },
