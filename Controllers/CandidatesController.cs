@@ -42,5 +42,48 @@ namespace CandidateApi.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        // GET: api/candidates
+        [HttpGet]
+        public async Task<IActionResult> GetAllCandidates()
+        {
+            try
+            {
+                var candidates = await _candidateService.GetAllCandidatesAsync();
+
+                if (candidates == null || candidates.Count == 0)
+                {
+                    return NotFound("No candidates found.");
+                }
+
+                return Ok(candidates); // Returns the list of candidates
+            }
+            catch (System.Exception ex)
+            {
+                // Log the exception (optional)
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        // GET: api/candidates/{email}
+        [HttpGet("{email}")]
+        public async Task<IActionResult> GetCandidateByEmail(string email)
+        {
+            try
+            {
+                var candidate = await _candidateService.GetCandidateByEmailAsync(email);
+
+                if (candidate == null)
+                {
+                    return NotFound($"Candidate with email {email} not found.");
+                }
+
+                return Ok(candidate); // Returns the candidate if found
+            }
+            catch (System.Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

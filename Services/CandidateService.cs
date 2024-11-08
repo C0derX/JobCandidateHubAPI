@@ -19,5 +19,14 @@ namespace CandidateApi.Services
             return await _candidateRepository.CreateOrUpdateCandidateAsync(candidate);
         }
 
+        public async Task<List<Candidate>> GetAllCandidatesAsync()
+        {
+            return await _candidateRepository.GetAllCandidatesAsync();
+        }
+
+        public async Task<Candidate> GetCandidateByEmailAsync(string email)
+        {
+            return await _candidateRepository.GetCandidateByEmailAsync(email);
+        }
     }
 }

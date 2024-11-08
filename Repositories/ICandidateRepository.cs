@@ -7,6 +7,7 @@ namespace CandidateApi.Repositories
     public interface ICandidateRepository
     {
         Task<Candidate> CreateOrUpdateCandidateAsync(Candidate candidate);
-
+        Task<List<Candidate>> GetAllCandidatesAsync();
+        Task<Candidate> GetCandidateByEmailAsync(string email);
     }
 }

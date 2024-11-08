@@ -41,5 +41,16 @@ namespace CandidateApi.Repositories
                 return candidate;
             }
         }
+
+        public async Task<List<Candidate>> GetAllCandidatesAsync()
+        {
+            return await _context.Candidates.ToListAsync();
+        }
+
+        public async Task<Candidate> GetCandidateByEmailAsync(string email)
+        {
+            return await _context.Candidates
+                .FirstOrDefaultAsync(c => c.Email == email);
+        }
     }
 }
